@@ -6,12 +6,13 @@ The Amazon repricing software helps increase your sales by monitoring and automa
 ### Features
 * Find the lowest price listing with equivalent or better condition and either match or beat the price by $0.01
 * Calculate profit earned from the listed price after shipping, tax, and Amazon fees
-* Set price floor to desired minimum profit
+* Set price floor to a desired minimum profit
 * Set price ceiling to prevent offer from being delisted (happens when price is too high)
 * Filter listings based on condition and seller rating
 
 ### How to Use
-Create a text file in the `Amazon` directory with all of your product ASIN/ISBN-10 numbers and their condition. The condition number is as follows (also see `books.txt` as a sample file):  
+Create a text file in the `Amazon` directory with all of your product ASIN/ISBN-10 numbers and their condition. The condition number is as follows (also see `books.txt` as a sample file):
+
 | **Condition:**               | **Number:** |
 |--------------------------|---------|
 | New                      | 9       |
@@ -41,11 +42,11 @@ Clone the repository and `cd` into the same directory.
 `$ git clone http://github.com/rchen8/Amazon.git`  
 `$ cd Amazon`
 
-**Using Eclipse**
+**Using Eclipse**  
 Select *File --> New --> Java Project*. Uncheck "Use default location". Under "Location" browse the directory of the Amazon repository. Click "Finish".  
 To add the external JAR in the `lib` folder, right-click `jsoup-1.8.2.jar` and select *Build Path --> Add to Build Path*.
 
-**Using Command Line**
+**Using Command Line**  
 `cd` into the `src` directory.  
 `$ cd src`
 
@@ -68,3 +69,4 @@ Please feel free to contact me if you have any questions or suggestions for impr
 * Simple way to add condition filters
 * Parse tax information from HTML (cssQuery doesn't work on Amazon for tax)
 * Optimize time to parse listings by only selecting the lowest price per condition
+* Avoid price wars by counting number of price changes
