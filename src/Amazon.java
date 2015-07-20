@@ -30,7 +30,7 @@ public class Amazon {
 		System.out.print("Enter your Amazon seller name: ");
 		sellerName = console.readLine();
 
-		System.out.print("Enter your target seller rating: ");
+		System.out.print("Enter your target seller rating (___%): ");
 		targetRating = Integer.parseInt(console.readLine());
 		System.out.println();
 
@@ -38,7 +38,7 @@ public class Amazon {
 		fileName = console.readLine();
 
 		unprofitable = new ArrayList<>();
-		System.out.print("Enter your desired minimum profit: ");
+		System.out.print("Enter your desired minimum profit: $");
 		minProfit = Double.parseDouble(console.readLine());
 		System.out.println();
 
@@ -107,11 +107,13 @@ public class Amazon {
 		console();
 		file();
 
-		System.out.printf(
-				"These products did not meet the $%.2f minimum profit:%n",
-				minProfit);
-		for (String s : unprofitable) {
-			System.out.println(s);
+		if (!unprofitable.isEmpty()) {
+			System.out.printf(
+					"These products did not meet the $%.2f minimum profit:%n",
+					minProfit);
+			for (String s : unprofitable) {
+				System.out.println(s);
+			}
 		}
 	}
 
