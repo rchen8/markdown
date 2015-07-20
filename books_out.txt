@@ -1,14 +1,17 @@
 Stargirl
 2.00
 
+My Name Is Asher Lev
+3.48
+
 Culture and Values: A Survey of the Humanities, Alternate Edition (Book & CD-ROM)
-22.98
+19.00
 
 The Western Heritage: Since 1300 (7th Edition)
 34.79
 
 Kaplan AP Human Geography 2011
-11.22
+10.67
 
 Hal Leonard Essential Musicianship for Band - Ensemble Concepts Oboe
 10.98
@@ -17,10 +20,10 @@ RICORDI VIVALDI A. - CONCERTO IN RE MIN. OP.VIII N.9 - HAUTBOIS ET PIANO Partiti
 13.26
 
 What life was like (The Nature Company discoveries library)
-4.97
+4.99
 
 The Kingfisher Young People's Book of Oceans (Kingfisher Book Of)
-3.74
+3.75
 
 Foundations for Superior Performance, Oboe
 6.49
@@ -29,16 +32,16 @@ Exploring Mathematics
 49.99
 
 30 New Studies in Technics: For the Piano - Opus 849
-2.38
+2.37
 
 Super Sensational Science Fair Projects.
 3.85
 
 Wonders of our world (The Nature Company discoveries library)
-3.96
+3.95
 
 Cembalokonzert VII g-Moll BWV 1058
-33.36
+33.35
 
 The Human Body (Reader's Digest Pathfinders)
 49.52
@@ -53,7 +56,7 @@ J.S, Bach: Little Fugues and Little Preludes with Fugues (Kjos Master Composer L
 8.53
 
 Oboenkonzert C-dur Hob VIIg:C1
-30.25
+30.24
 
 Sharks and Other Sea Creatures - Library Edition (RD Pathfinders)
 35.00
@@ -62,7 +65,7 @@ James and Jane Bastien: First Sonatina Album (Bastien Sonatinas)
 5.36
 
 Forty Progressive Studies (Kalmus Classic Editions)
-4.84
+5.00
 
 Concerto for Oboe and Strings. Freely arranged by A. Benjamin. Reduction for Oboe, or Clarinet, and Piano
 13.00
@@ -71,19 +74,19 @@ Sonatina Album for the Piano (Book & CD) (Alfred CD Edition)
 6.04
 
 DIVERTIMENTO FOR FLUTE OBOE AND CLARINET
-10.38
+10.37
 
 Elementary Instruction Book for the Pianoforte
 3.46
 
 Sams Teach Yourself Perl in 21 Days (2nd Edition)
-19.99
+27.41
 
 Public Forum Debate (The National Forensic League Library of Public Speaking and Debate)
-59.23
+67.53
 
 PIC BASIC: Programming and Projects
-27.90
+12.82
 
 48 Studies for Oboe, Op. 31
 12.01
@@ -92,10 +95,10 @@ CMOS Circuit Design, Layout, and Simulation
 19.39
 
 Tartuffe and Other Plays
-2.99
+2.98
 
 Easy Pic'N: A Beginners Guide to Using Pic16/17 Microcontrollers from Square 1
-91.58
+89.76
 
 Analog MOS Integrated Circuits, II (IEEE Press Selected Reprint Series)
 40.27
@@ -104,16 +107,16 @@ Pick'n up the Pace -- Microcontroller Application Guide (for intermediate users)
 11.79
 
 Serial PIC'n : PIC Microcontroller Serial Communications
-95.18
+94.14
 
 Scott Foresman - Addison Wesley Math - Texas Edition
 8.98
 
 Webster's New World Spanish Dictionary
-8.63
+4.59
 
 Migration in World History (Themes in World History)
-24.26
+24.24
 
 Burgmüller: 18 Characteristic Studies, Op. 109 (Alfred Masterwork Edition)
 4.91
@@ -122,7 +125,7 @@ Introduction to Algorithms in Pascal
 50.00
 
 UNIVERSITY AND COLLEGE TEXTBOOK COURSE BOOK VERSION OFFICIAL TITLE IS: TRIAL TECHNIQUES BY THOMAS A. MAUET (SOFTCOVER, 5TH EDITION, 2000 VERSION, 578 PAGES, PUBLISHED BY ASPEN LAW & BUSINESS)
-50.18
+50.16
 
 Nonlinear Microwave Circuits
 10.94

@@ -65,12 +65,7 @@ public class Amazon {
 				ArrayList<Listing> listings = lp.parseListings();
 
 				Repricer repricer = new Repricer(product, listings);
-				Listing myListing;
-				if (lp.getMyIndex() == -1) {
-					myListing = new Listing();
-				} else {
-					myListing = listings.get(lp.getMyIndex());
-				}
+				Listing myListing = lp.getMyListing();
 
 				repricer.setRatingFilter(targetRating);
 				repricer.setConditionFilter(condition);

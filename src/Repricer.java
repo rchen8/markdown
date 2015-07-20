@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Repricer {
 	private static final double VARIABLE_FEE_RATE = 0.15;
@@ -16,7 +15,6 @@ public class Repricer {
 	public Repricer(Product product, ArrayList<Listing> listings) {
 		this.product = product;
 		this.listings = listings;
-		Collections.sort(listings);
 
 		priceFloor = 0.0;
 		priceCeiling = Double.MAX_VALUE;

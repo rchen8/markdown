@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -16,8 +17,9 @@ public class ListingParser extends Parser {
 
 	private String url;
 	private Document doc;
-	private int amazonIndex, myIndex;
+	private ArrayList<Listing> listings;
 
+	private int amazonIndex;
 	private ArrayList<String> seller;
 	private ArrayList<Double> price, shipping, tax;
 	private ArrayList<Integer> rating, totalRatings, condition;
@@ -25,9 +27,9 @@ public class ListingParser extends Parser {
 	public ListingParser(String url) throws IOException {
 		this.url = url;
 		this.doc = parseURL(url);
-		amazonIndex = -1;
-		myIndex = -1;
+		listings = new ArrayList<>();
 
+		amazonIndex = -1;
 		seller = new ArrayList<>();
 		price = new ArrayList<>();
 		shipping = new ArrayList<>();
@@ -54,7 +56,8 @@ public class ListingParser extends Parser {
 			doc = parseURL(url);
 		}
 
-		return getListings();
+		listings = getListings();
+		return listings;
 	}
 
 	private void parsePrice(Document doc) {
@@ -87,9 +90,6 @@ public class ListingParser extends Parser {
 				amazonIndex = this.seller.size();
 				this.seller.add("Amazon.com");
 			} else {
-				if (e.text().equals(Amazon.sellerName)) {
-					myIndex = this.seller.size();
-				}
 				this.seller.add(e.text());
 			}
 		}
@@ -197,6 +197,7 @@ public class ListingParser extends Parser {
 			listings.add(offer);
 		}
 
+		Collections.sort(listings);
 		return listings;
 	}
 
@@ -208,8 +209,13 @@ public class ListingParser extends Parser {
 	public String getURL() {
 		return url;
 	}
-	
-	public int getMyIndex() {
-		return myIndex;
+
+	public Listing getMyListing() {
+		for (Listing offer : listings) {
+			if (offer.getSeller().equals(Amazon.sellerName)) {
+				return offer;
+			}
+		}
+		return new Listing();
 	}
 }

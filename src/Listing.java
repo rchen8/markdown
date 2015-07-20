@@ -6,8 +6,9 @@ public class Listing implements Comparable<Listing> {
 	private int rating, totalRatings, condition;
 
 	public Listing() {
-		seller = "";
+		seller = Amazon.sellerName;
 		shipping = DEFAULT_SHIPPING;
+		total = shipping;
 	}
 
 	public Listing(String seller, double price, double shipping, double tax,
@@ -102,6 +103,7 @@ public class Listing implements Comparable<Listing> {
 
 	@Override
 	public String toString() {
-		return seller + ": $" + total;
+		return String.format("%s: $%.2f + $%.2f shipping%n", seller, price,
+				shipping);
 	}
 }

@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.SocketTimeoutException;
 
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
@@ -20,6 +21,8 @@ public class Parser {
 				if (e.getStatusCode() == INVALID_URL_STATUS_CODE) {
 					throw new MalformedURLException("Invalid URL.");
 				}
+			} catch (SocketTimeoutException e) {
+				// try connecting to URL again
 			}
 		}
 
