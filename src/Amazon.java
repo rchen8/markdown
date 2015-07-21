@@ -58,7 +58,7 @@ public class Amazon {
 			try {
 				String url1 = PRODUCT_URL + asin;
 				Product product = new ProductParser(url1).parseProduct();
-				System.out.println(product.getName());
+				System.out.println(product);
 
 				String url2 = LISTING_URL_1 + asin + LISTING_URL_2;
 				ListingParser lp = new ListingParser(url2);
@@ -73,7 +73,7 @@ public class Amazon {
 				double price = repricer.reprice(myListing);
 				double profit = repricer.calculateProfit(price,
 						myListing.getShipping());
-				print(product.getName(), price, profit);
+				print(product.toString(), price, profit);
 			} catch (MalformedURLException e) {
 				System.out.println(e.getMessage() + asin + " not found.");
 			}

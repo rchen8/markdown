@@ -1,10 +1,9 @@
 public class Product {
-	private static final int MAX_OUNCE = 8;
-	private static final double FIRST_CLASS_BASE = 0.98;
-	private static final double FIRST_CLASS_RATE = 0.22;
+	private static final double AMAZON_FEE = 0.07;
 	private static final double MEDIA_BASE = 2.72;
 	private static final double MEDIA_RATE = 0.5;
-	private static final double AMAZON_FEE = 0.07;
+	private static final double[] FIRST_CLASS = { 2.04, 2.04, 2.04, 2.13, 2.22,
+			2.35, 2.53, 2.71 };
 
 	private String name, asin;
 	private double weight; // positive = pounds, negative = ounces
@@ -27,11 +26,10 @@ public class Product {
 			return MEDIA_BASE + (lbs - 1) * MEDIA_RATE + AMAZON_FEE;
 		} else {
 			int oz = (int) Math.round(Math.ceil(-weight));
-			if (oz > MAX_OUNCE) {
+			if (oz > FIRST_CLASS.length) {
 				return MEDIA_BASE + AMAZON_FEE;
 			} else {
-				return FIRST_CLASS_BASE + (oz - 1) * FIRST_CLASS_RATE
-						+ AMAZON_FEE;
+				return FIRST_CLASS[oz - 1] + AMAZON_FEE;
 			}
 		}
 	}
@@ -64,7 +62,7 @@ public class Product {
 	public double getShippingRate() {
 		return shippingRate;
 	}
-	
+
 	@Override
 	public String toString() {
 		return name + ": " + asin;
