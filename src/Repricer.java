@@ -38,9 +38,11 @@ public class Repricer {
 				continue;
 			}
 
-			if (offer.getCondition() >= conditionFilter) {
-				if (conditionFilter == Condition.NEW
-						|| Math.abs(total - listings.get(0).getTotal()) < EPSILON) {
+			if (offer.getCondition() == Condition.NEW
+					&& conditionFilter == Condition.NEW) {
+				return offer.getTotal() - seller.getShipping();
+			} else if (offer.getCondition() >= conditionFilter - 1) {
+				if (Math.abs(total - listings.get(0).getTotal()) < EPSILON) {
 					return offer.getTotal() - seller.getShipping();
 				} else {
 					return offer.getTotal() - seller.getShipping() - 0.01;
