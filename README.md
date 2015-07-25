@@ -57,7 +57,7 @@ To run (replacing `<path>` with the full file path to the `Amazon` directory).
 `$ java -cp <path>\lib\jsoup-1.8.2.jar;. Amazon`
 
 ### About
-Copyright (c) 2015 Richard Chen under the Egreen License, Version 1.0.
+Copyright (c) 2015 Richard Chen under the Egreen License, Version 1.0.  
 Email: richardchen39@gmail.com
 
 Please feel free to contact me if you have any questions or suggestions for improvements. If you're interested in development, fork this repository and submit a pull request. Contributions are welcome with open arms.
