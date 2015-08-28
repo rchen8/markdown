@@ -1,7 +1,7 @@
-# Amazon
+# Markdown
 Repricing software for your inventory on Amazon.
 
-The Amazon repricing software helps increase your sales by monitoring and automatically updating your inventory prices according to the current market. This saves countless hours of manually re-pricing hundreds, if not thousands, of listings.
+Markdown helps increase your sales by monitoring and automatically updating your inventory prices according to the current market. This saves countless hours of manually re-pricing hundreds, if not thousands, of listings.
 
 ### Features
 * Finds the lowest price listing with equivalent or better condition, and either matches or beats the price by $0.01
